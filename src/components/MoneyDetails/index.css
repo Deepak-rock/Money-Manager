@@ -1,1 +1,72 @@
 /* Write your CSS here */
+.money-detials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.container {
+  margin: 10px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  height: 15vh;
+  padding: 20px;
+}
+.balance-container {
+  background-color: #ecfccb;
+  border: 1px solid #84cc16;
+}
+.income-container {
+  background-color: #cffafe;
+  border: 1px solid #06b6d4;
+}
+.expenses-container {
+  background-color: #ede9fe;
+  border: 1px solid #7c3aed;
+}
+.money-manager-icon {
+  width: 80px;
+  height: 80px;
+}
+.money-details-container {
+  margin: 0 20px;
+}
+.money-type {
+  font-size: 14px;
+  font-family: 'Roboto';
+  color: #475569;
+}
+.money {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Roboto';
+  color: #475569;
+}
+
+@media screen and (min-width: 768px) {
+  .money-detials-container {
+    flex-direction: row;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .container {
+    width: 30.21%;
+  }
+  .balance-container {
+    margin: 10px 20px 0 0;
+    flex-grow: 1;
+  }
+  .income-container {
+    margin: 10px 0;
+  }
+  .expenses-container {
+    margin: 10px 0 0 20px;
+  }
+  .money {
+    font-size: 18px;
+  }
+}
